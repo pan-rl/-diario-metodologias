@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diario de Metodologías de Desarrollo de Software - Un recurso completo sobre SCRUM, gestión de proyectos y más.">
+    <title>Diario de Metodologías de Desarrollo de Software</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Diario de Metodologías</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#semana1">Semana 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stakeholders">Stakeholders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gestion">Gestión de Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrum">SCRUM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyecto-scrum">Proyecto SCRUM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyecto-xp">Proyecto XP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#xp">XP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <section id="semana1" class="mb-5">
+            <h2>Semana 01</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Se requiere planificar actividades dentro de un presupuesto limitado.</p>
+                    <p>El software es intangible hasta que se tiene un producto funcional.</p>
+                    <p>Los requerimientos pueden cambiar, lo que exige una administración cuidadosa de recursos y coordinación entre:</p>
+                    <ul>
+                        <li>Proveedores</li>
+                        <li>Administradores</li>
+                        <li>Desarrolladores</li>
+                    </ul>
+                    
+                    <h4><i class="fas fa-exclamation-triangle me-2"></i>Desafíos Comunes</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-warning">
+                                <strong>Cambios constantes</strong> en los requerimientos
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning">
+                                <strong>Limitaciones</strong> de presupuesto
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning">
+                                <strong>Plazos ajustados</strong> y presión por entrega
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning">
+                                <strong>Comunicación</strong> entre equipos multidisciplinarios
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4><i class="fas fa-tasks me-2"></i>Proceso de Gestión de Requerimientos</h4>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Recolección de Requerimientos</h5>
+                                <p>Identificación de necesidades y expectativas de los stakeholders a través de entrevistas, encuestas y talleres.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Análisis de Viabilidad</h5>
+                                <p>Evaluación técnica, operativa y económica de los requerimientos identificados.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Documentación</h5>
+                                <p>Elaboración de documentos formales que describen los requerimientos de manera clara y medible.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h5>Validación</h5>
+                                <p>Verificación con los stakeholders de que los requerimientos capturados reflejan sus necesidades reales.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h5>Gestión de Cambios</h5>
+                                <p>Proceso estructurado para evaluar, priorizar e implementar cambios en los requerimientos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stakeholders" class="mb-5">
+            <h2>Rol de los Stakeholders</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h4>Hitos</h4>
+                    <p>Puntos de revisión clave en el progreso del proyecto que permiten evaluar el avance y tomar decisiones importantes.</p>
+                    
+                    <h4>Técnicas de negociación</h4>
+                    <p>Para equilibrar restricciones y expectativas entre las diferentes partes interesadas.</p>
+                    
+                    <h4>Método MoSCoW para priorizar requerimientos:</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success">
+                                <strong>Must have</strong><br>
+                                Requerimientos críticos que deben estar en la versión final.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-info">
+                                <strong>Should have</strong><br>
+                                Importantes pero no vitales, pueden posponerse si es necesario.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning">
+                                <strong>Could have</strong><br>
+                                Deseables pero no esenciales, de bajo impacto si se omiten.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-secondary">
+                                <strong>Won't have</strong><br>
+                                Requerimientos de menor prioridad, no se incluirán en esta iteración.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Buenas Prácticas</h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Transparencia</h5>
+                                    <p class="card-text">Promover la transparencia en el equipo para generar confianza.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Autoorganización</h5>
+                                    <p class="card-text">Fomentar la autoorganización del equipo para mejorar la eficiencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reconocimiento</h5>
+                                    <p class="card-text">Celebrar logros para reforzar la motivación del equipo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gestion" class="mb-5">
+            <h2>Gestión de Proyectos de Software</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h4>Semana 03-04</h4>
+                    <p>Enfoque en las metodologías ágiles y su aplicación en el desarrollo de software.</p>
+                    
+                    <h4>Técnicas de estimación y planificación</h4>
+                    <ul>
+                        <li>Planning Poker</li>
+                        <li>Estimación por puntos de historia</li>
+                        <li>Velocidad del equipo</li>
+                        <li>Burn-down charts</li>
+                    </ul>
+                    
+                    <h4>Ciclo de vida del software (SDLC)</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Modelo en Cascada</h5>
+                            <ul>
+                                <li>Fases secuenciales</li>
+                                <li>Documentación extensiva</li>
+                                <li>Poco flexible a cambios</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Modelo Ágil</h5>
+                            <ul>
+                                <li>Iterativo e incremental</li>
+                                <li>Flexible a cambios</li>
+                                <li>Entrega continua de valor</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h4>Principios del Manifiesto Ágil</h4>
+                    <div class="alert alert-light">
+                        <strong>Individuos e interacciones</strong> sobre procesos y herramientas<br>
+                        <strong>Software funcionando</strong> sobre documentación extensiva<br>
+                        <strong>Colaboración con el cliente</strong> sobre negociación contractual<br>
+                        <strong>Respuesta ante el cambio</strong> sobre seguir un plan
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scrum" class="mb-5">
+            <h2>SCRUM: Marco de Trabajo Ágil</h2>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Roles en SCRUM</h4>
+                            <ul>
+                                <li><strong>Product Owner:</strong> Representa al negocio</li>
+                                <li><strong>Scrum Master:</strong> Facilita el proceso</li>
+                                <li><strong>Equipo de Desarrollo:</strong> Desarrolladores, testers, etc.</li>
+                            </ul>
+                            
+                            <h4>Artefactos</h4>
+                            <ul>
+                                <li>Product Backlog</li>
+                                <li>Sprint Backlog</li>
+                                <li>Incremento</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Eventos del Sprint</h4>
+                            <ol>
+                                <li>Sprint Planning</li>
+                                <li>Daily Scrum</li>
+                                <li>Sprint Review</li>
+                                <li>Sprint Retrospective</li>
+                            </ol>
+                            
+                            <h4>Beneficios</h4>
+                            <ul>
+                                <li>Mayor visibilidad del progreso</li>
+                                <li>Mayor flexibilidad</li>
+                                <li>Mejor calidad del producto</li>
+                                <li>Mayor satisfacción del cliente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección del Proyecto SCRUM -->
+    <div class="container my-5">
+        <section id="proyecto-scrum" class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="mb-0">Primer Proyecto SCRUM: Gestor de Tareas</h2>
+                <a href="https://drive.google.com/drive/folders/1m6AFqTfI7IWplVocK4G_tqlncuJbQ_QT?usp=sharing" target="_blank" class="btn btn-outline-primary">
+                    <i class="fas fa-images me-2"></i>Ver todas las imágenes
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h3><i class="fas fa-tasks me-2"></i>Descripción del Proyecto</h3>
+                            <p>Desarrollo de un Gestor de Tareas utilizando la metodología SCRUM. Este proyecto fue nuestro primer acercamiento práctico a la implementación de metodologías ágiles en el desarrollo de software.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-cogs me-2"></i>Características Principales</h4>
+                            <ul class="feature-list">
+                                <li>Creación y gestión de tareas</li>
+                                <li>Asignación de prioridades</li>
+                                <li>Seguimiento de estado (Pendiente, En Progreso, Completado)</li>
+                                <li>Visualización en tablero Kanban</li>
+                                <li>Filtros y búsqueda avanzada</li>
+                            </ul>
+
+                            <h4 class="mt-4"><i class="fas fa-users me-2"></i>Roles del Equipo</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-user-tie"></i>
+                                        <h5>Product Owner</h5>
+                                        <p>Definición de historias de usuario y priorización del backlog</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-chess-king"></i>
+                                        <h5>Scrum Master</h5>
+                                        <p>Facilitación de ceremonias y remoción de impedimentos</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-code"></i>
+                                        <h5>Equipo de Desarrollo</h5>
+                                        <p>Implementación de funcionalidades</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                            
+                            <h4 class="mt-4">Captura de la Aplicación</h4>
+                            <div class="mockup-container">
+                                <div class="mockup-header">
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                </div>
+                                <img src="https://drive.google.com/uc?export=view&id=1m6AFqTfI7IWplVocK4G_tqlncuJbQ_QT" alt="Captura de la aplicación" class="mockup-img">
+                                <div class="mockup-caption">Vista de la aplicación en funcionamiento</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Video Demostrativo</h4>
+                            <div class="ratio ratio-16x9 mb-4">
+                                <iframe src="https://drive.google.com/file/d/1R5W7BJ7jmeZTU-fvnyfWa2I_j-mQv7XM/preview" width="100%" height="100%" allow="autoplay" class="rounded"></iframe>
+                            </div>
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Si el video no se reproduce correctamente, puedes verlo directamente en 
+                                <a href="https://drive.google.com/file/d/1R5W7BJ7jmeZTU-fvnyfWa2I_j-mQv7XM/view?usp=sharing" target="_blank" class="alert-link">Google Drive</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sprint-retro mt-5">
+                        <h4><i class="fas fa-chart-line me-2"></i>Lecciones Aprendidas</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="lesson-card">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    <h5>Lo que salió bien</h5>
+                                    <ul>
+                                        <li>Comunicación constante entre el equipo</li>
+                                        <li>Entregas incrementales</li>
+                                        <li>Retroalimentación temprana</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="lesson-card">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>
+                                    <h5>Mejoras para el próximo sprint</h5>
+                                    <ul>
+                                        <li>Mejor estimación de tareas</li>
+                                        <li>Revisión más detallada del DoD</li>
+                                        <li>Más pruebas unitarias</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="lesson-card">
+                                    <i class="fas fa-lightbulb text-info"></i>
+                                    <h5>Acciones a implementar</h5>
+                                    <ul>
+                                        <li>Pair programming</li>
+                                        <li>Code reviews más estrictas</li>
+                                        <li>Mejor documentación</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección del Proyecto XP -->
+    <div class="container my-5">
+        <section id="proyecto-xp" class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="mb-0">Proyecto XP: Maxi Market</h2>
+                <a href="https://drive.google.com/drive/folders/13WqA4UWCA7rNEEKxQhU-FEW1sAjRb0wq?usp=sharing" target="_blank" class="btn btn-outline-primary">
+                    <i class="fas fa-folder me-2"></i>Ver documentos del proyecto
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h3><i class="fas fa-shopping-cart me-2"></i>Maxi Market - Supermercado en Línea</h3>
+                            <p>Desarrollo de una plataforma de supermercado en línea utilizando Extreme Programming (XP) como metodología ágil. Maxi Market es una solución innovadora que permite a los usuarios realizar compras de supermercado de manera rápida y sencilla desde cualquier dispositivo.</p>
+                            
+                            <h4 class="mt-4"><i class="fas fa-star me-2"></i>Características Principales</h4>
+                            <ul class="feature-list">
+                                <li><strong>Catálogo de Productos:</strong> Amplia variedad de productos organizados por categorías</li>
+                                <li><strong>Carrito de Compras:</strong> Sistema intuitivo para gestionar los productos seleccionados</li>
+                                <li><strong>Chat en Vivo:</strong> Asistencia en tiempo real para los clientes</li>
+                                <li><strong>Gestión de Pedidos:</strong> Seguimiento en tiempo real del estado de los pedidos</li>
+                                <li><strong>Perfiles de Usuario:</strong> Personalización de la experiencia de compra</li>
+                            </ul>
+
+                            <h4 class="mt-4"><i class="fas fa-lightbulb me-2"></i>Innovaciones</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-comments"></i>
+                                        <h5>Chat Box Inteligente</h5>
+                                        <p>Sistema de chat avanzado que permite a los clientes realizar consultas en tiempo real, obtener recomendaciones de productos y recibir asistencia personalizada.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-search"></i>
+                                        <h5>Búsqueda Avanzada</h5>
+                                        <p>Potente motor de búsqueda con filtros inteligentes para encontrar productos de manera rápida y eficiente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="xp-highlight">
+                                <h5><i class="fas fa-code-branch me-2"></i>Metodología XP</h5>
+                                <p>Este proyecto se desarrolló siguiendo los principios de Extreme Programming, con:</p>
+                                <ul>
+                                    <li>Programación en parejas</li>
+                                    <li>Desarrollo guiado por pruebas (TDD)</li>
+                                    <li>Integración continua</li>
+                                    <li>Entregas incrementales</li>
+                                    <li>Retroalimentación constante del cliente</li>
+                                </ul>
+                                <a href="#xp" class="btn btn-sm btn-outline-primary mt-2">Ver más sobre XP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección de Extreme Programming (XP) -->
+    <div class="container my-5">
+        <section id="xp" class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="mb-0">Extreme Programming (XP)</h2>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3><i class="fas fa-bolt me-2"></i>¿Qué es Extreme Programming (XP)?</h3>
+                            <p>Metodología ágil enfocada en:</p>
+                            <ul class="feature-list">
+                                <li>Adaptabilidad al cambio</li>
+                                <li>Entregas rápidas y funcionales</li>
+                                <li>Colaboración estrecha con el cliente</li>
+                                <li>Ideal para entornos dinámicos con requisitos cambiantes</li>
+                            </ul>
+
+                            <h4 class="mt-4"><i class="fas fa-star me-2"></i>Valores Fundamentales</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Valor</th>
+                                            <th>Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Comunicación</td>
+                                            <td>Diálogo constante entre equipo y cliente. Evita documentación innecesaria.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Simplicidad</td>
+                                            <td>Soluciones mínimas que funcionen. Se evita la sobreingeniería.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Retroalimentación</td>
+                                            <td>Pruebas continuas y entregas frecuentes para detectar errores temprano.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coraje</td>
+                                            <td>Tomar decisiones difíciles, eliminar código innecesario, admitir errores.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Respeto</td>
+                                            <td>Ambiente colaborativo y valoración mutua entre miembros del equipo.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4 class="mt-4"><i class="fas fa-cogs me-2"></i>Prácticas Fundamentales</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-gamepad"></i>
+                                        <h5>Planning Game</h5>
+                                        <p>Planificación colaborativa con el cliente</p>
+                                        <ul class="small">
+                                            <li>Release Planning: 3-6 meses</li>
+                                            <li>Iteration Planning: 1-3 semanas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-code-branch"></i>
+                                        <h5>Pair Programming</h5>
+                                        <p>Dos programadores trabajando juntos</p>
+                                        <ul class="small">
+                                            <li>Driver: Escribe el código</li>
+                                            <li>Navigator: Revisa y propone mejoras</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-vial"></i>
+                                        <h5>TDD</h5>
+                                        <p>Desarrollo guiado por pruebas</p>
+                                        <ul class="small">
+                                            <li>Red: Escribir prueba que falle</li>
+                                            <li>Green: Hacer que pase</li>
+                                            <li>Refactor: Mejorar el código</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="role-card">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <h5>Integración Continua</h5>
+                                        <p>Integración diaria del código</p>
+                                        <ul class="small">
+                                            <li>Pruebas automáticas</li>
+                                            <li>Builds frecuentes</li>
+                                            <li>Despliegues continuos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-thumbs-up me-2"></i>Ventajas</h5>
+                                    <ul class="feature-list">
+                                        <li>Alta calidad del software</li>
+                                        <li>Flexibilidad ante cambios</li>
+                                        <li>Reducción de riesgos</li>
+                                        <li>Mejor comunicación</li>
+                                        <li>Código más mantenible</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-exclamation-triangle me-2"></i>Desafíos</h5>
+                                    <ul class="feature-list">
+                                        <li>Requiere disciplina constante</li>
+                                        <li>Dependencia del cliente</li>
+                                        <li>Difícil de escalar</li>
+                                        <li>No todos se adaptan al Pair Programming</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Diario de Metodologías</h5>
+                    <p>Un recurso educativo sobre metodologías de desarrollo de software.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#semana1" class="text-white">Semana 1</a></li>
+                        <li><a href="#stakeholders" class="text-white">Stakeholders</a></li>
+                        <li><a href="#gestion" class="text-white">Gestión de Proyectos</a></li>
+                        <li><a href="#scrum" class="text-white">SCRUM</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-envelope me-2"></i> arodriguezl@est.utn.ac.cr</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">© 2023 Diario de Metodologías - Desarrollado por Ashly Rodriguez]</p>
+                <p class="small mb-0">Última actualización: Agosto 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animación suave al hacer scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Actualizar año del copyright
+        document.addEventListener('DOMContentLoaded', function() {
+            const year = new Date().getFullYear();
+            document.querySelectorAll('.current-year').forEach(el => {
+                el.textContent = year;
+            });
+        });
+    </script>
+</body>
+</html>
